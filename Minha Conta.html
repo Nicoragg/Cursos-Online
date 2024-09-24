@@ -1,0 +1,216 @@
+<html>
+<head>
+    <title>EnsinaAí</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #8b0abe;
+            color: white;
+        }
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo i {
+            font-size: 36px;
+            margin-right: 10px;
+        }
+        .header .logo h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .header .account {
+            display: flex;
+            align-items: center;
+        }
+        .header .account h2 {
+            margin: 0 10px 0 0;
+        }
+        .header .account .cart-icon {
+            font-size: 24px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a63ecf;
+        }
+        .nav a {
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 20px auto;
+            background-color: white;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+        .personal-info, .edit-info {
+            flex: 1;
+            margin-right: 20px;
+        }
+        .personal-info {
+            background-color: #F5F5F5;
+            padding: 20px;
+            border-radius: 8px;
+        }
+        .personal-info h2, .edit-info h2 {
+            font-size: 18px;
+            margin-top: 0;
+            color: #333;
+        }
+        .info-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+        }
+        .info-group div {
+            flex: 1;
+            margin-right: 10px;
+        }
+        .info-group div:last-child {
+            margin-right: 0;
+        }
+        .info-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #555;
+        }
+        .info-group input {
+            width: 100%;
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            transition: border-color 0.3s;
+        }
+        .info-group input:focus {
+            border-color: #a63ecf;
+        }
+        .edit-btn {
+            display: block;
+            margin: 20px 0 0 auto;
+            padding: 10px 20px;
+            background-color: #a63ecf;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+        .edit-btn:hover {
+            background-color: #8b0abe;
+        }
+        .footer {
+            background-color: #8b0abe;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+            box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .footer p {
+            margin: 0;
+        }
+        .edit-info {
+            background-color: #F9F9F9;
+            border-radius: 8px;
+            padding: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <h1>EnsinaAí</h1>
+        </div>
+        <div class="account">
+            <h2>Minha Conta</h2>
+            <i class="fas fa-shopping-cart cart-icon"></i>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="#">Front-End</a>
+        <a href="#">Back-End</a>
+        <a href="#">Dev-Ops</a>
+        <a href="#">Pacote Office</a>
+        <a href="#">Banco de Dados</a>
+        <a href="#">Data Science</a>
+    </div>
+    <div class="content">
+        <div class="personal-info">
+            <a href="#">← VOLTAR</a>
+            <h2>DADOS CADASTRADOS</h2>
+            <div class="info-group">
+                <div>
+                    <label>NOME</label>
+                    <p>João da Silva</p>
+                    <label>SOBRENOME</label>
+                    <p>Souza</p>
+                    <label>E-MAIL</label>
+                    <p>joao.silva@email.com</p>
+                    <label>CPF</label>
+                    <p>123.456.789-00</p>
+                </div>
+                <div>
+                    <label>GÊNERO</label>
+                    <p>Masculino</p>
+                    <label>DATA DE NASCIMENTO</label>
+                    <p>01/01/1990</p>
+                    <label>TELEFONE</label>
+                    <p>(11) 91234-5678</p>
+                </div>
+            </div>
+            <div class="newsletter">
+                <h2>NEWSLETTER</h2>
+                <p>Deseja receber e-mails com promoções?</p>
+                <input type="checkbox" checked/> Quero receber e-mails com promoções.
+            </div>
+        </div>
+        <div class="edit-info">
+            <h2>EDITAR DADOS</h2>
+            <div class="info-group">
+                <div>
+                    <label for="edit_nome">NOME</label>
+                    <input id="edit_nome" name="edit_nome" type="text" value="João"/>
+                    <label for="edit_sobrenome">SOBRENOME</label>
+                    <input id="edit_sobrenome" name="edit_sobrenome" type="text" value="Souza"/>
+                    <label for="edit_email">E-MAIL</label>
+                    <input id="edit_email" name="edit_email" type="email" value="joao.silva@email.com"/>
+                    <label for="edit_cpf">CPF</label>
+                    <input id="edit_cpf" name="edit_cpf" type="text" value="123.456.789-00"/>
+                </div>
+                <div>
+                    <label for="edit_genero">GÊNERO</label>
+                    <input id="edit_genero" name="edit_genero" type="text" value="Masculino"/>
+                    <label for="edit_data_nascimento">DATA DE NASCIMENTO</label>
+                    <input id="edit_data_nascimento" name="edit_data_nascimento" type="date" value="1990-01-01"/>
+                    <label for="edit_telefone">TELEFONE</label>
+                    <input id="edit_telefone" name="edit_telefone" type="tel" value="(11) 91234-5678"/>
+                </div>
+            </div>
+            <button class="edit-btn">Salvar alterações</button>
+        </div>
+    </div>
+    <div class="footer">
+        <p>© 2024 EnsinaAí. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

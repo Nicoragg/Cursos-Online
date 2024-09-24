@@ -1,0 +1,241 @@
+<html>
+<head>
+    <title>EnsinaAí - Curso de Html</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet"/>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh; /* Para garantir que o footer fique na parte inferior */
+            background-color: #f4f4f4;
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background-color: #8b0abe; /* Cor da header */
+            color: white;
+        }
+        .header h1 {
+            margin: 0;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+        }
+        .header .logo i {
+            font-size: 36px;
+            margin-right: 10px;
+        }
+        .header .account {
+            display: flex;
+            align-items: center;
+            color: white;
+        }
+        .header .account i {
+            margin-left: 10px;
+        }
+        .nav {
+            display: flex;
+            justify-content: center;
+            background-color: #a63ecf;
+        }
+        .nav a {
+            padding: 15px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .nav a:hover {
+            background-color: #9b2cbf;
+        }
+        .content {
+            display: flex;
+            flex: 1; /* Permite que a área de conteúdo cresça */
+            padding: 20px;
+        }
+        .content .main {
+            flex: 2;
+            margin-right: 20px;
+            padding-left: 100px;
+        }
+        .content .sidebar {
+            flex: 1;
+            background-color: #e0e0e0;
+            padding: 20px;
+            border-radius: 5px;
+        }
+        .content .main h2 {
+            font-size: 24px;
+            margin: 0;
+        }
+        .content .main .rating {
+            color: #ffcc00;
+            font-size: 20px;
+        }
+        .content .main .reviews {
+            color: #333;
+            font-size: 14px;
+        }
+        .content .main .video {
+            position: relative;
+            margin-top: 20px;
+        }
+        .content .main .video img {
+            width: 100%;
+            border-radius: 5px;
+        }
+        .content .main .additional-content {
+            margin-top: 20px;
+        }
+        .content .main .additional-content h3 {
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+        .content .main .additional-content p {
+            font-size: 16px;
+            color: #333;
+            line-height: 1.5;
+        }
+        .content .sidebar h3 {
+            font-size: 18px;
+            margin-top: 0;
+        }
+        .content .sidebar .module {
+            margin-bottom: 20px;
+        }
+        .content .sidebar .module h4 {
+            font-size: 16px;
+            margin: 0;
+        }
+        .content .sidebar .module .lesson {
+            display: flex;
+            align-items: center;
+            padding: 10px;
+            background-color: white;
+            border-radius: 5px;
+            margin-top: 10px;
+        }
+        .footer {
+            width: 100%; /* Para ocupar toda a largura */
+            background-color: #8b0abe;
+            padding: 20px;
+            text-align: center;
+            color: white; /* Texto em branco */
+        }
+        .footer p {
+            margin: 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="logo">
+            <i class="fas fa-graduation-cap"></i>
+            <h1>EnsinaAí</h1>
+        </div>
+        <div class="account">
+            <h2>Minha Conta</h2>
+            <i class="fas fa-shopping-cart cart-icon"></i>
+        </div>
+    </div>
+    <div class="nav">
+        <a href="#">Front-End</a>
+        <a href="#">Back-End</a>
+        <a href="#">Dev-Ops</a>
+        <a href="#">Pacote Office</a>
+        <a href="#">Banco de Dados</a>
+        <a href="#">Data Science</a>
+    </div>
+    <div class="content">
+        <div class="main">
+            <h2>Curso de Html</h2>
+            <div class="rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+            </div>
+            <div class="reviews">7k avaliações</div>
+            <div class="video">
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/SV7TL0hxmIQ?si=Vtw7Up43UdEu251m" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="additional-content">
+                <h3>Sobre o Curso</h3>
+                <p>Este curso de HTML é projetado para iniciantes que desejam aprender a criar páginas da web. Você aprenderá sobre a estrutura básica do HTML, como adicionar textos, imagens, links, cabeçalhos e rodapés, além de botões e formulários.</p>
+                <h3>Conteúdo do Curso</h3>
+                <ul>
+                    <li>Introdução ao HTML</li>
+                    <li>Estrutura Essencial do HTML</li>
+                    <li>Trabalhando com Textos</li>
+                    <li>Adicionando Imagens</li>
+                    <li>Criando Links</li>
+                    <li>Cabeçalhos e Rodapés</li>
+                    <li>Botões e Formulários</li>
+                    <li>Práticas e Projetos</li>
+                </ul>
+            </div>
+        </div>
+        <div class="sidebar">
+            <div class="module">
+                <h4>Módulo 1:</h4>
+                <div class="lesson">
+                    <input checked name="module1" type="radio"/>
+                    <label>Estrutura essencial do html</label>
+                </div>
+                <div class="lesson">
+                    <input name="module1" type="radio"/>
+                    <label>Textos</label>
+                </div>
+            </div>
+            <div class="module">
+                <h4>Módulo 2:</h4>
+                <div class="lesson">
+                    <input name="module2" type="radio"/>
+                    <label>Imagens</label>
+                </div>
+                <div class="lesson">
+                    <input name="module2" type="radio"/>
+                    <label>Links</label>
+                </div>
+                <div class="lesson">
+                    <input name="module2" type="radio"/>
+                    <label>Header e Footer</label>
+                </div>
+                <div class="lesson">
+                    <input name="module2" type="radio"/>
+                    <label>Botões e Formulários</label>
+                </div>
+            </div>
+            <div class="module">
+                <h4>Módulo 3:</h4>
+                <div class="lesson">
+                    <input name="module3" type="radio"/>
+                    <label>Tabelas</label>
+                </div>
+                <div class="lesson">
+                    <input name="module3" type="radio"/>
+                    <label>Listas</label>
+                </div>
+                <div class="lesson">
+                    <input name="module3" type="radio"/>
+                    <label>Formatação de Texto</label>
+                </div>
+                <div class="lesson">
+                    <input name="module3" type="radio"/>
+                    <label>Elementos Multimídia</label>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <p>&copy; 2023 EnsinaAí. Todos os direitos reservados.</p>
+    </div>
+</body>
+</html>

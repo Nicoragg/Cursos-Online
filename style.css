@@ -1,0 +1,50 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #00A859;
+    color: white;
+}
+.header .logo {
+    display: flex;
+    align-items: center;
+}
+.header .logo i {
+    font-size: 36px;
+    margin-right: 10px;
+}
+.header .logo h1 {
+    margin: 0;
+    font-size: 24px;
+}
+.header .account {
+    display: flex;
+    align-items: center;
+}
+.header .account h2 {
+    margin: 0 10px 0 0;
+}
+.header .account .cart-icon {
+    font-size: 24px;
+}
+.nav {
+    display: flex;
+    justify-content: center;
+    background-color: #8BC34A;
+}
+.nav a {
+    padding: 15px 20px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+.content {
+    display: flex;
+    padding: 20px;
+}
